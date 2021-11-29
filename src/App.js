@@ -5,7 +5,7 @@ import React, { useEffect } from 'react'
 //import { AnecdoteForm } from './components/AnecdoteForm'
 import { AnecdoteList } from './components/AnecdoteList'
 //import { Notification } from './components/Notification'
-import { Filter } from './components/AnecdoteFilter'
+//import { Filter } from '../frontend/client/components/AnecdoteFilter'
 
 //-----NÄMÄ KUN KÄYTETÄÄN useSelector ja useDispatch HOOKIEIDEN SIJAAN connect FUNKTIOITA ALKAA------
 import ConnectedNotification from './components/Notification'
@@ -15,7 +15,7 @@ import ConnectedFilter from './components/AnecdoteFilter'
 
 
 //------------NÄMÄ TARVITAAN INITIAL TILAN LUOMISEKSI/db.json FILESTÄ DATAN HAKEMISEKSI ALKAA--------
-import anecdoteService from './services/anecdotes'
+//import anecdoteService from './services/anecdotes'
 import { initializeAnecdotes } from './reducers/anecdoteReducer'
 import { useDispatch } from 'react-redux'
 //------------NÄMÄ TARVITAAN INITIAL TILAN LUOMISEKSI/db.json FILESTÄ DATAN HAKEMISEKSI LOPPUU--------
