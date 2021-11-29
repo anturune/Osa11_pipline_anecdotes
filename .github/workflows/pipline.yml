@@ -37,5 +37,5 @@ jobs:
           heroku_api_key: ${{secrets.HEROKU_API_KEY}}
           heroku_app_name: atu-ci-anecdotes
           heroku_email: asturune@hotmail.com
-          healthcheck: https://atu-ci-anecdotes.herokuapp.com/health #ks. endpoint app.js filestä muutoksia
+          #healthcheck: https://atu-ci-anecdotes.herokuapp.com/health #ks. endpoint app.js filestä muutoksia
           rollbackonhealthcheckfailed: true #tekee rollbackin, jos deployment feilaa Herokuunss
