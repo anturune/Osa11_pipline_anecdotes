@@ -61,43 +61,7 @@ const anecdoteReducer = (state = initialState, action) => {
   }
 }
 
-/*
-//Tällä annetaan reducerille ID ja type, jolla määrätään mitä tehdään
-//Action on javascript objekti jolla on type -field.
-export const voteAnecdote = (id) => {
-  console.log('TULIKO VOTEEN')
-  return {
-    type: 'VOTE',
-    data: { id }
-  }
-}
-*/
-/*
-//Tällä Luodaan uusi anecdote ja importataan esim. "App.js" fileen, josta
-//tänne tuodaan anecdoten contentti
-//Action on javascript objekti jolla on type -field.
-export const createAnecdote = ({ content }) => {
-  console.log('TULIKO CREATW ANECDOTEEN',content)
-  return {
-    type: 'NEW_ANECDOTE',
-    data: {
-      content,
-      //Tätä ei tarvita, kun käytetään json serveriä, server luo itse id:n
-      //id: getId(),
-      votes: 0
-    }
-  }
-}
-*/
-/*
-//Action anecdoottien alustamiselle, tätä ajetaan "stor.js" filestä
-export const initializeAnecdotes = (anecdotes) => {
-  return {
-    type: 'INIT_ANECDOTES',
-    data: anecdotes
-  }
-}
-*/
+
 
 //----------------NÄMÄ TOTEUTETTU REDUX THUNKILLA ALKAA----------------------------------
 //Tällä annetaan reducerille ID ja type, jolla määrätään mitä tehdään

@@ -1,12 +1,18 @@
 import axios from 'axios'
 
 //Määritellään baseUrl, joka lukee datan "db.json" filestä
-const baseUrl = 'http://localhost:3001/anecdotes'
+//const baseUrl = 'http://localhost:3001/anecdotes'
+
+const baseUrl = 'http://localhost:3000/anecdotes'
 //Funktio kaikkien anecdoottien hakemiseksi
 const getAll = async () => {
+    console.log('TULEEKO GET AALIIN')
     const response = await axios.get(baseUrl)
+    console.log('Responssi',response.data)
     return response.data
 }
+
+//console.log('TULEEKO SERVICES/anecdotes.jsss')
 
 //Funktio uuden anecdootin luomiseksi
 const createNewAnecdote = async (content) => {

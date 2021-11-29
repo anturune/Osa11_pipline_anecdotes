@@ -31,35 +31,6 @@ const notificationReducer = (state = initialState, action) => {
     }
 }
 
-/*
-//Tällä actionilla annetaan käsky palauttaa "NEW_ANECDOTE_NOTE" tila 
-//Action on javascript objekti jolla on type -field.
-export const createNewNotification = (content) => {
-    return {
-        type: 'NEW_ANECDOTE_NOTE',
-        data: { content }
-    }
-}
-*/
-/*
-//Tällä actionilla annetaan käsky palauttaa "REMOVE_NOTE" tila 
-//Action on javascript objekti jolla on type -field.
-export const removeNotification = () => {
-    return {
-        type: 'REMOVE_NOTE'
-    }
-}
-*/
-/*
-//Tällä actionilla annetaan käsky palauttaa "NEW_ANECDOTE_NOTE" tila 
-//Action on javascript objekti jolla on type -field.
-export const voteNotification = (content) => {
-    return {
-        type: 'VOTE_ANECDOTE_NOTE',
-        data: { content }
-    }
-}
-*/
 
 
 //------------ASYNC/AWAITILLA NOTIFICATION ALKAA-------------

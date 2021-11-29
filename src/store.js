@@ -20,11 +20,5 @@ const store = createStore(
   composeWithDevTools(applyMiddleware(thunk))
 )
 
-//console.log('JSONISTA KAIKKI', anecdoteService.getAll())
-/*
-//Tällä alustetaan alkutila json serveriltä ja "db.json" filestä
-//HUOM! Alustus siirretty App.js fileen ja siellä käytetään effecHookia
-anecdoteService.getAll().then(anecdotes => store.dispatch(initializeAnecdotes(anecdotes)))
-*/
 
 export default store
