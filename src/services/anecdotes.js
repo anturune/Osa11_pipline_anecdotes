@@ -1,9 +1,12 @@
 import axios from 'axios'
 
 //Määritellään baseUrl, joka lukee datan "db.json" filestä
-//const baseUrl = 'http://localhost:3001/anecdotes'
+//Suhteellinen määritys kun ollaa yhdistetty forntend ja backend
+//Ja viedään Herokuun/Herokua varten
+const baseUrl = '/anecdotes'
 
-const baseUrl = 'http://localhost:3000/anecdotes'
+////Tämä kun käytetään lokaalisti backend frontend yhdistelmää
+//const baseUrl = 'http://localhost:3000/anecdotes'
 //Funktio kaikkien anecdoottien hakemiseksi
 const getAll = async () => {
     console.log('TULEEKO GET AALIIN')

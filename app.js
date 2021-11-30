@@ -18,9 +18,9 @@ app.use(middlewares)
 app.use(router)
 
 // eslint-disable-next-line no-undef
-const PORT = process.env.PORT || 3000
+const PORT = process.env.PORT || 3001
 app.listen(PORT, () => {
-    console.log("JSON server is running on port 3000")
+    console.log("JSON server is running on port 3001")
 });
 
 app.get('/health', (req, res) => {
