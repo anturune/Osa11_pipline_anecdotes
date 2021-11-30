@@ -15,3 +15,12 @@ Start by running `npm install` inside the project folder
 Used the following API for JSON server and frontend communication:
 ----"Get a full fake REST API with zero coding in less than 30 seconds (seriously)"---
 https://github.com/typicode/json-server
+
+NOTE! When "npm run build" remember this:
+/services/anecdotes.js
+When to Heroku
+const baseUrl = '/anecdotes'
+
+When running locally
+const baseUrl = 'http://localhost:3000/anecdotes'
+Funktio kaikkien anecdoottien hakemiseksi

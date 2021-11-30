@@ -19,36 +19,11 @@
       "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
       "votes": 41,
       "id": "36975"
-    },
-    {
-      "content": "Uusi anecdote",
-      "votes": 55,
-      "id": "EMrfBCc"
-    },
-    {
-      "content": "Any fool jotain",
-      "votes": 7,
-      "id": "8cjrszl"
-    },
-    {
-      "content": "Any fool jotain",
-      "votes": 3,
-      "id": "lIDB9em"
-    },
-    {
-      "content": "Any fool jotain",
-      "votes": 1,
-      "id": "JQL2xEd"
-    },
-    {
-      "content": "jotain uutta",
-      "votes": 1,
-      "id": "GA7gZXG"
-    },
-    {
-      "content": "jotain uutta",
-      "votes": 0,
-      "id": "XlKv8Re"
     }
-  ]
+  ],
+  "healthcheck": {
+    "content": "Any fool can write code that a computer can understand. Good programmers write code that humans can understand.",
+    "votes": 41,
+    "id": "36975"
+  }
 }

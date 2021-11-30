@@ -5,7 +5,7 @@ import axios from 'axios'
 //Ja viedään Herokuun/Herokua varten
 const baseUrl = '/anecdotes'
 
-////Tämä kun käytetään lokaalisti backend frontend yhdistelmää
+//Tämä kun käytetään lokaalisti backend frontend yhdistelmää
 //const baseUrl = 'http://localhost:3000/anecdotes'
 //Funktio kaikkien anecdoottien hakemiseksi
 const getAll = async () => {
