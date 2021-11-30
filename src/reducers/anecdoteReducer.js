@@ -1,3 +1,4 @@
+/* eslint-disable no-case-declarations */
 
 //Tämä import tarvitaan, kun haetaan data json serveriltä
 import anecdoteService from '../services/anecdotes'

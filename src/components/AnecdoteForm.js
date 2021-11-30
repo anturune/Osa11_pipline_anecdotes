@@ -4,7 +4,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 //import { useDispatch } from 'react-redux'
 import { createAnecdote } from '../reducers/anecdoteReducer'
+// eslint-disable-next-line no-unused-vars
 import { createNewNotification, removeNotification } from '../reducers/notificationReducer'
+// eslint-disable-next-line no-unused-vars
 import anecdoteService from '../services/anecdotes'
 
 
