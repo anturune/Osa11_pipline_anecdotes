@@ -27,12 +27,12 @@
     },
     {
       "content": "Any fool jotain",
-      "votes": 5,
+      "votes": 7,
       "id": "8cjrszl"
     },
     {
       "content": "Any fool jotain",
-      "votes": 2,
+      "votes": 3,
       "id": "lIDB9em"
     },
     {
@@ -44,6 +44,11 @@
       "content": "jotain uutta",
       "votes": 1,
       "id": "GA7gZXG"
+    },
+    {
+      "content": "jotain uutta",
+      "votes": 0,
+      "id": "XlKv8Re"
     }
   ]
 }

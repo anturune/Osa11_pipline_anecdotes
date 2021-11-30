@@ -1,6 +1,7 @@
 import React from 'react'
 import { useSelector, useDispatch } from 'react-redux'
 import { voteAnecdoteReduxThunk } from '../reducers/anecdoteReducer'
+// eslint-disable-next-line no-unused-vars
 import { createNewNotification, voteNotification, removeNotification } from '../reducers/notificationReducer'
 
 //Eristetään omaan komponenttiin yksittäisen Anecdootin näyttäminen sekä vote nappi
