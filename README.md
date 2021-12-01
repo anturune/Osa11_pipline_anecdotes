@@ -13,7 +13,7 @@ Start by running `npm install` inside the project folder
 `npm run start-prod` to run your production build
 
 Used the following API for JSON server and frontend communication:
-----"Get a full fake REST API with zero coding in less than 30 seconds (seriously)"---
+"Get a full fake REST API with zero coding in less than 30 seconds (seriously)"
 https://github.com/typicode/json-server
 
 NOTE! When "npm run build" remember this:
