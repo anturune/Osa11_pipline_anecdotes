@@ -39,3 +39,20 @@ jobs:
           heroku_email: asturune@hotmail.com
           healthcheck: https://atu-ci-anecdotes.herokuapp.com/healthcheck #ks. db.json -tsekkaa statusta 200
           rollbackonhealthcheckfailed: true #tekee rollbackin, jos deployment feilaa Herokuun
+          - uses: actions/checkout@v2 #Checkout uudelleen, ettei tule virhettä workflowin ajossa-->ei pysty muuten lisäämään tag:a
+      - name: Bump version and push tag/versioning
+        if: ${{ github.event_name == 'push' && !contains(github.event.commits[0].message,'#skip')}} #tällä varmistetaan, että vain main branch muutokset luovat uuden version
+        uses: anothrNick/github-tag-action@1.36.0 #Open source versioning action
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          WITH_V: true
+          DEFAULT_BUMP: "patch" #defaulttina minor ja tässä halutaan muuttaa defaultiksi patch
+      - name: success/failure notification
+        uses: 8398a7/action-slack@v3 #slack sovelluksen käyttöön kehitetty
+        with:
+          status: ${{ job.status }}
+          fields: repo,message,commit,author,took,action,workflow # selectable (default: repo,message)
+          #fields: repo,message,commit,author,action,eventName,ref,workflow,job,took,pullRequest # selectable (default: repo,message)
+        env:
+          SLACK_WEBHOOK_URL: ${{ secrets.SLACK_WEBHOOK_URL }} # URL löytyy slack sovelluksen #general osion ylälaidasta
+        if: always() # Pick up events even if the job fails or is canceled.
