@@ -6,7 +6,7 @@ import axios from 'axios'
 const baseUrl = '/anecdotes'
 
 //Tämä kun käytetään lokaalisti backend frontend yhdistelmää
-//const baseUrl = 'http://localhost:3000/anecdotes'
+//const baseUrl = 'http://localhost:3001/anecdotes'
 //Funktio kaikkien anecdoottien hakemiseksi
 const getAll = async () => {
     console.log('TULEEKO GET AALIIN')

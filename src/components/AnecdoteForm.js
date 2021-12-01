@@ -14,11 +14,11 @@ import anecdoteService from '../services/anecdotes'
 //Uuden Anekdootin eristmäinen omaan komponenttiin ja exportattu muiden komponenttien/failien
 //käyttöön
 const AnecdoteForm = (props) => {
-    
+
     //Muutetaan async/await, koska talletetaan uusi anecdote json serverille
     const addNewAnecdote = async (event) => {
         event.preventDefault()
-        
+
         const content = event.target.newAnecdote.value
         event.target.newAnecdote.value = ''
         //Kun käytetään connect funktiota, "createAnecdote" ja "createNewNotification"
@@ -32,8 +32,8 @@ const AnecdoteForm = (props) => {
     return (
         <div>
             <form onSubmit={addNewAnecdote}>
-                <div><input name="newAnecdote" /></div>
-                <button type="submit">create</button>
+                <div><input id='newAnecdoteId' name="newAnecdote" /></div>
+                <button id='submit-buttonId' type="submit">create</button>
             </form>
         </div>
     )
